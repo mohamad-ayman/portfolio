@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Ayman — Senior .NET Developer | Angular &amp; Azure</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;MA /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Open to opportunities</div>
+      <h1 class="hero-title">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name">Mohamed Ayman</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor-blink">|</span>
+        </span>
+      </div>
+      <p class="hero-description">
+        Building robust enterprise solutions with <strong>.NET</strong>, <strong>Azure</strong> &amp; dynamic interfaces with <strong>Angular</strong>.
+        Passionate about <strong>Clean Architecture</strong>, <strong>Microservices</strong>, and delivering scalable software serving <strong>1M+ users</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-code"></i> View My Work
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="1">0</span><span class="stat-plus">M+</span>
+          <span class="stat-label">Users Served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Senior .NET Developer</strong> with a passion for creating scalable,
+            high-performance web applications. I have a proven track record of delivering
+            enterprise-grade software in fast-paced environments — including platforms serving
+            <strong>over 1 million users</strong>.
+          </p>
+          <p>
+            My expertise spans backend architecture with <strong>ASP.NET Core</strong>,
+            <strong>Microservices</strong>, <strong>Azure Functions</strong>,
+            <strong>Clean Architecture</strong>, <strong>DDD</strong>, and <strong>Onion Architecture</strong>,
+            combined with workflow orchestration using <strong>Camunda BPM</strong>, cloud services on
+            <strong>Azure</strong>, and modern frontend development with <strong>Angular</strong>
+            and <strong>TypeScript</strong>.
+          </p>
+          <p>
+            I thrive in Agile teams, transforming legacy monoliths into scalable microservices,
+            translating complex business requirements into technical specifications, and continuously
+            optimizing performance. Currently pursuing a <strong>Pre-Master in Software Engineering</strong>
+            at Helwan University to deepen my architectural expertise.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Maadi, Cairo, Egypt</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>miido.ayman@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-phone"></i>
+              <span>+20 115 532 6174</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-language"></i>
+              <span>Arabic (Native), English (Professional)</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">developer.json</span>
+            </div>
+            <pre class="code-block"><code>{
+  <span class="key">"name"</span>: <span class="string">"Mohamed Ayman"</span>,
+  <span class="key">"title"</span>: <span class="string">"Senior .NET Developer"</span>,
+  <span class="key">"location"</span>: <span class="string">"Cairo, Egypt"</span>,
+  <span class="key">"backend"</span>: [
+    <span class="string">"C#"</span>, <span class="string">"ASP.NET Core"</span>,
+    <span class="string">"Web API"</span>, <span class="string">"EF Core"</span>,
+    <span class="string">"Dapper"</span>, <span class="string">"Camunda"</span>
+  ],
+  <span class="key">"cloud"</span>: [
+    <span class="string">"Azure Functions"</span>,
+    <span class="string">"Service Bus"</span>,
+    <span class="string">"AI Search"</span>, <span class="string">"Insights"</span>
+  ],
+  <span class="key">"frontend"</span>: [
+    <span class="string">"Angular"</span>, <span class="string">"TypeScript"</span>
+  ],
+  <span class="key">"architecture"</span>: [
+    <span class="string">"Microservices"</span>,
+    <span class="string">"Clean Architecture"</span>,
+    <span class="string">"DDD"</span>, <span class="string">"CQRS"</span>
+  ],
+  <span class="key">"highlight"</span>: <span class="string">"1M+ users platform"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">02.</span> Skills &amp; Expertise
+      </h2>
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category" data-aos="fade-up">
+          <div class="skill-icon backend">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Development</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">C#</span>
+            <span class="tag tag-primary">ASP.NET Core</span>
+            <span class="tag tag-primary">Web API</span>
+            <span class="tag tag-primary">.NET Framework</span>
+            <span class="tag tag-primary">MVC</span>
+            <span class="tag tag-primary">LINQ</span>
+            <span class="tag tag-primary">Entity Framework</span>
+            <span class="tag tag-primary">Dapper</span>
+            <span class="tag tag-primary">Camunda BPM</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>C# / ASP.NET Core</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Web API / MVC</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Entity Framework / Dapper</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Camunda BPM</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon frontend">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <div class="skill-tags">
+            <span class="tag tag-secondary">Angular</span>
+            <span class="tag tag-secondary">TypeScript</span>
+            <span class="tag tag-secondary">JavaScript</span>
+            <span class="tag tag-secondary">jQuery</span>
+            <span class="tag tag-secondary">HTML5</span>
+            <span class="tag tag-secondary">CSS3</span>
+            <span class="tag tag-secondary">Bootstrap</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Angular / TypeScript</span>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript / jQuery</span>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>HTML / CSS / Bootstrap</span>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture & Patterns -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon architecture">
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <h3>Architecture &amp; Patterns</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Clean Architecture</span>
+            <span class="tag tag-accent">DDD</span>
+            <span class="tag tag-accent">Onion Architecture</span>
+            <span class="tag tag-accent">CQRS</span>
+            <span class="tag tag-accent">MediatR</span>
+            <span class="tag tag-accent">Repository</span>
+            <span class="tag tag-accent">Unit of Work</span>
+            <span class="tag tag-accent">Singleton</span>
+            <span class="tag tag-accent">Observer</span>
+            <span class="tag tag-accent">Decorator</span>
+            <span class="tag tag-accent">DI</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Clean Architecture / DDD / Onion</span>
+              <div class="skill-bar"><div class="skill-fill accent" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>CQRS / MediatR</span>
+              <div class="skill-bar"><div class="skill-fill accent" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Design Patterns (GoF)</span>
+              <div class="skill-bar"><div class="skill-fill accent" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Azure & Cloud -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-icon devops">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Azure &amp; Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag tag-devops">Azure Functions</span>
+            <span class="tag tag-devops">Azure Service Bus</span>
+            <span class="tag tag-devops">Azure AI Search</span>
+            <span class="tag tag-devops">Azure Insights</span>
+            <span class="tag tag-devops">Microservices</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Azure Functions / Service Bus</span>
+              <div class="skill-bar"><div class="skill-fill devops" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Azure AI Search / Insights</span>
+              <div class="skill-bar"><div class="skill-fill devops" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Microservices Migration</span>
+              <div class="skill-bar"><div class="skill-fill devops" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-icon" style="background:rgba(16,185,129,0.1);color:#10b981;">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Databases &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">SQL Server</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">MySQL</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">Redis</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">Git</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">TFS</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">Python</span>
+            <span class="tag" style="color:#10b981;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);">C++</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>SQL Server / MySQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="background:linear-gradient(135deg,#10b981,#34d399);" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Redis</span>
+              <div class="skill-bar"><div class="skill-fill" style="background:linear-gradient(135deg,#10b981,#34d399);" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Git / TFS</span>
+              <div class="skill-bar"><div class="skill-fill" style="background:linear-gradient(135deg,#10b981,#34d399);" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">03.</span> Work Experience
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-marker current"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Software Developer</h3>
+              <span class="company">FlairsTech</span>
+              <span class="badge-current">Current</span>
+              <span class="period"><i class="far fa-calendar-alt"></i> Jun 2025 — Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Architecting and developing a comprehensive Umrah management platform (Masar Umrah) using Clean Architecture and Modular Monolith patterns</li>
+              <li>Designing contract management modules (Charter Flights, Hotel Bookings) with CQRS and MediatR</li>
+              <li>Building RESTful APIs with ASP.NET Core serving Angular frontend applications</li>
+              <li>Implementing domain-driven design with rich domain models and value objects</li>
+              <li>Integrating Camunda BPM for orchestrating complex business workflows including approval chains, visa processing, and contract lifecycle management</li>
+              <li>Leading code reviews, mentoring developers, and establishing coding standards</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span>
+              <span>Clean Architecture</span><span>CQRS</span><span>MediatR</span>
+              <span>Camunda</span><span>DDD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior .NET Developer</h3>
+              <span class="company">Nahdet Misr Publishing Group</span>
+              <span class="period"><i class="far fa-calendar-alt"></i> Feb 2025 — Jun 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Transformed a legacy WordPress monolithic application into a scalable microservices architecture using Azure Functions, significantly enhancing maintainability and performance</li>
+              <li>Developed and maintained the <strong>Aladwaa</strong> educational platform serving <strong>1M+ users</strong>, with recorded video lessons and live session subscriptions for remote learning</li>
+              <li>Leveraged Azure Service Bus for reliable asynchronous messaging between distributed services</li>
+              <li>Integrated Azure AI Search to dramatically boost search efficiency across the platform</li>
+              <li>Continuously optimized API endpoints to reduce response times and database load using Azure Insights monitoring</li>
+              <li>Managed complex database operations across MS-SQL and MySQL, including WordPress plugin integrations</li>
+              <li>Worked closely within Agile teams ensuring smooth delivery and continuous improvement</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>ASP.NET Core</span><span>Azure Functions</span><span>Azure Service Bus</span>
+              <span>Azure AI Search</span><span>Azure Insights</span><span>Microservices</span>
+              <span>SQL Server</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer</h3>
+              <span class="company">Digital Transformation Center</span>
+              <span class="period"><i class="far fa-calendar-alt"></i> Aug 2022 — Jan 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed and maintained enterprise web applications using ASP.NET Core, MVC, and C#</li>
+              <li>Designed and implemented RESTful APIs using ASP.NET Web API for high-traffic applications</li>
+              <li>Led the development of the National Project Management System using ASP.NET Core API, Angular, and SQL Server</li>
+              <li>Integrated Camunda BPM for orchestrating complex business workflows including approval chains and process automation</li>
+              <li>Designed secure, scalable API architecture enabling new feature development and improved data accessibility</li>
+              <li>Integrated third-party APIs and services for enhanced application functionality</li>
+              <li>Enforced Software Architecture Standards and Best Practices across the team</li>
+              <li>Collaborated with stakeholders to translate business requirements into technical specifications</li>
+              <li>Conducted code reviews and provided constructive feedback to team members</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>ASP.NET Core</span><span>Angular</span><span>Web API</span>
+              <span>SQL Server</span><span>Clean Architecture</span><span>CQRS</span>
+              <span>MediatR</span><span>Camunda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Trainer</h3>
+              <span class="company">Petrojet</span>
+              <span class="period"><i class="far fa-calendar-alt"></i> May 2021 — Jun 2021</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Worked with SAP modules and gained hands-on experience with enterprise resource planning systems</li>
+              <li>Managed account profiles and monitored execution of demand generation activities</li>
+              <li>Collaborated with sales representatives on process optimization and workflow management</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>SAP</span><span>ERP</span><span>Process Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">04.</span> Featured Projects
+      </h2>
+      <div class="projects-grid">
+        <div class="project-card featured" data-aos="zoom-in">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Masar Umrah Platform</h3>
+          <p class="project-desc">
+            Comprehensive Umrah management platform handling charter flight contracts,
+            hotel bookings, visa processing, and group management. Built with Clean Architecture,
+            Modular Monolith, and Camunda-powered workflow orchestration for complex business processes.
+          </p>
+          <div class="project-tech">
+            <span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span>
+            <span>Clean Architecture</span><span>CQRS</span><span>Camunda</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Aladwaa Educational Platform</h3>
+          <p class="project-desc">
+            Large-scale EdTech platform serving 1M+ users with recorded video lessons, live session
+            subscriptions, and remote learning features. Migrated from WordPress monolith to
+            Azure-powered microservices architecture for enhanced performance and scalability.
+          </p>
+          <div class="project-tech">
+            <span>ASP.NET Core</span><span>Azure Functions</span><span>Service Bus</span>
+            <span>AI Search</span><span>Microservices</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">National Project Management System</h3>
+          <p class="project-desc">
+            Led the development of a web-based platform for managing and tracking national projects.
+            Implemented project creation, data management, advanced reporting, and full authentication &amp; authorization.
+            Conducted training sessions and provided ongoing support to maximize system adoption.
+          </p>
+          <div class="project-tech">
+            <span>ASP.NET Core API</span><span>Angular</span><span>SQL Server</span>
+            <span>Camunda</span><span>Clean Architecture</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mohamad-ayman/cms-project" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Content Management System</h3>
+          <p class="project-desc">
+            Full CRUD operations with .NET Core Web API and Angular frontend.
+            Applied AutoMapper for object mapping, Dependency Injection for clean service layers,
+            and Microsoft Identity for secure authentication &amp; authorization.
+          </p>
+          <div class="project-tech">
+            <span>.NET Core</span><span>Angular</span><span>Web API</span>
+            <span>AutoMapper</span><span>Identity</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">
+            Fully functional e-commerce website with product catalog, shopping cart, order management,
+            and payment processing. Built with a layered architecture for maintainability and scalability.
+          </p>
+          <div class="project-tech">
+            <span>ASP.NET Core MVC</span><span>Entity Framework Core</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mohamad-ayman/movies-db" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Movie DB</h3>
+          <p class="project-desc">
+            Interactive movie discovery application that consumes external APIs to display trending movies,
+            details, ratings, and search functionality with a responsive, modern UI.
+          </p>
+          <div class="project-tech">
+            <span>Angular</span><span>TypeScript</span><span>REST API</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">05.</span> Education
+      </h2>
+      <div class="education-grid">
+        <div class="edu-card" data-aos="fade-up">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Pre-Master in Software Engineering</h3>
+          <span class="edu-institution">Helwan University</span>
+          <span class="edu-year">Jan 2024 — Present</span>
+        </div>
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="edu-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>B.Sc. in Computer Science</h3>
+          <span class="edu-institution">October 6 University</span>
+          <span class="edu-year">Sep 2018 — Jul 2021 &nbsp;·&nbsp; GPA: 2.9 (Good)</span>
+          <p class="edu-project">Graduation Project: <strong>Online Quiz Maker</strong> — Grade: Excellent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">06.</span> Certifications
+      </h2>
+      <div class="education-grid three-col">
+        <div class="edu-card" data-aos="fade-up">
+          <div class="edu-icon cert">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Full Stack Web Development Diploma (.NET/Angular)</h3>
+          <span class="edu-institution">Route</span>
+        </div>
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="edu-icon cert">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Agile Software Development</h3>
+          <span class="edu-institution">Coursera</span>
+        </div>
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="edu-icon cert">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Software Development Processes &amp; Methodologies</h3>
+          <span class="edu-institution">Coursera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-number">07.</span> Get In Touch
+      </h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm always interested in hearing about new opportunities, challenging projects,
+            and connecting with fellow developers. Whether you have a question or just want to say hello,
+            feel free to reach out!
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:miido.ayman@gmail.com" class="contact-method">
+              <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>miido.ayman@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+201155326174" class="contact-method">
+              <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <span>+20 115 532 6174</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/mohamed-ayman-5460a8159" target="_blank" class="contact-method">
+              <div class="contact-method-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/mohamed-ayman</span>
+              </div>
+            </a>
+            <a href="https://github.com/mohamad-ayman" target="_blank" class="contact-method">
+              <div class="contact-method-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/mohamad-ayman</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/miido.ayman@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from your CV website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://mohamad-ayman.github.io/portfolio/" />
+          <div class="form-group">
+            <input type="text" name="name" id="name" placeholder="Your Name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" name="_subject" id="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">&lt;MA /&gt;</div>
+        <p>Designed &amp; Built by Mohamed Ayman</p>
+        <div class="footer-social">
+          <a href="https://github.com/mohamad-ayman" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/mohamed-ayman-5460a8159" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:miido.ayman@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
