@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mohamed Ayman — CV</title>
+  <style>
+    @page { margin: 0; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+      color: #1a1a2e;
+      font-size: 10pt;
+      line-height: 1.5;
+      padding: 30px 40px;
+      max-width: 210mm;
+    }
+
+    /* Header */
+    .header { text-align: center; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 2.5px solid #6366f1; }
+    .header h1 { font-size: 22pt; font-weight: 800; color: #1a1a2e; letter-spacing: -0.5px; }
+    .header h2 { font-size: 11pt; font-weight: 500; color: #6366f1; margin-top: 2px; }
+    .contact-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 8px; font-size: 9pt; color: #444; }
+    .contact-row span { display: flex; align-items: center; gap: 4px; }
+    .contact-row a { color: #6366f1; text-decoration: none; }
+
+    /* Sections */
+    .section { margin-top: 14px; }
+    .section-title {
+      font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+      color: #6366f1; border-bottom: 1.5px solid #e0e0e0; padding-bottom: 3px; margin-bottom: 8px;
+    }
+
+    /* Summary */
+    .summary { font-size: 9.5pt; color: #333; line-height: 1.6; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }
+    .skill-row { font-size: 9pt; }
+    .skill-row strong { color: #1a1a2e; font-size: 9pt; }
+    .skill-row span { color: #444; }
+
+    /* Experience */
+    .job { margin-bottom: 12px; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .job-title { font-size: 10.5pt; font-weight: 700; color: #1a1a2e; }
+    .job-date { font-size: 9pt; color: #666; font-style: italic; }
+    .job-company { font-size: 9.5pt; font-weight: 600; color: #6366f1; }
+    .job ul { margin-top: 4px; padding-left: 16px; }
+    .job li { font-size: 9pt; color: #333; margin-bottom: 2px; }
+    .job-tech { margin-top: 4px; font-size: 8pt; color: #666; }
+    .job-tech strong { color: #444; }
+
+    /* Projects */
+    .project { margin-bottom: 8px; }
+    .project-name { font-weight: 700; font-size: 9.5pt; color: #1a1a2e; display: inline; }
+    .project-desc { font-size: 9pt; color: #333; display: inline; }
+    .project-link { font-size: 8pt; color: #6366f1; text-decoration: none; }
+
+    /* Education */
+    .edu-item { margin-bottom: 6px; }
+    .edu-item strong { font-size: 10pt; color: #1a1a2e; }
+    .edu-item .school { font-size: 9pt; color: #6366f1; font-weight: 600; }
+    .edu-item .meta { font-size: 8.5pt; color: #666; }
+
+    /* Certifications */
+    .cert-list { display: flex; flex-direction: column; gap: 2px; }
+    .cert-item { font-size: 9pt; }
+    .cert-item strong { color: #1a1a2e; }
+    .cert-item span { color: #666; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Mohamed Ayman</h1>
+    <h2>Senior Software Developer | .NET &amp; Angular</h2>
+    <div class="contact-row">
+      <span>&#128205; Maadi, Cairo, Egypt</span>
+      <span>&#9993; miido.ayman@gmail.com</span>
+      <span>&#128222; +20 115 532 6174</span>
+      <span><a href="https://linkedin.com/in/mohamed-ayman-5460a8159">LinkedIn</a></span>
+      <span><a href="https://github.com/mohamad-ayman">GitHub</a></span>
+      <span><a href="https://mohamad-ayman.github.io/portfolio/">Portfolio</a></span>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      Senior Software Developer with 4+ years of experience specializing in .NET Core microservices, RESTful APIs, gRPC services, and Angular.
+      Proven track record of delivering enterprise-grade software including platforms serving 1M+ users across cloud (Azure/AWS) environments.
+      Strong expertise in Clean Architecture, SOLID principles, DDD, and distributed systems with message brokers (RabbitMQ).
+      Experienced in containerization (Docker), CI/CD pipelines, and Camunda BPM workflow orchestration.
+      Skilled at designing scalable, secure, high-performance backend systems and collaborating with cross-functional teams.
+      Experience working in government and regulated environments.
+    </p>
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Languages:</strong> <span>C#, TypeScript, JavaScript, Python, C++</span></div>
+      <div class="skill-row"><strong>Backend:</strong> <span>ASP.NET Core, Web API, RESTful APIs, gRPC, MVC, EF Core, Dapper, LINQ</span></div>
+      <div class="skill-row"><strong>Frontend:</strong> <span>Angular, HTML5, CSS3, Bootstrap, jQuery</span></div>
+      <div class="skill-row"><strong>Cloud:</strong> <span>Azure (Functions, Service Bus, AI Search, Insights), AWS (exposure)</span></div>
+      <div class="skill-row"><strong>Architecture:</strong> <span>Microservices, Clean Architecture, DDD, Onion, CQRS, MediatR, SOLID</span></div>
+      <div class="skill-row"><strong>Messaging:</strong> <span>RabbitMQ, Azure Service Bus, Async Messaging Patterns</span></div>
+      <div class="skill-row"><strong>Databases:</strong> <span>Oracle, SQL Server, MySQL, Redis</span></div>
+      <div class="skill-row"><strong>DevOps/Tools:</strong> <span>Docker, Git, CI/CD Pipelines, TFS, Camunda BPM, Agile/Scrum</span></div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Software Developer</span>
+        <span class="job-date">Jun 2025 — Present</span>
+      </div>
+      <div class="job-company">FlairsTech</div>
+      <ul>
+        <li>Designing and implementing scalable .NET Core microservices and backend APIs using Clean Architecture and Modular Monolith patterns</li>
+        <li>Developing RESTful APIs and gRPC services with ASP.NET Core serving Angular frontend applications</li>
+        <li>Implementing asynchronous messaging solutions using RabbitMQ for distributed system communication</li>
+        <li>Designing contract management modules (Charter Flights, Hotel Bookings) with CQRS and MediatR</li>
+        <li>Implementing domain-driven design with rich domain models, value objects, and SOLID principles</li>
+        <li>Integrating Camunda BPM for orchestrating complex business workflows including approval chains, visa processing, and contract lifecycle management</li>
+        <li>Integrating with third-party services and external systems to extend platform capabilities</li>
+        <li>Ensuring high performance, scalability, security, and maintainability of backend systems</li>
+        <li>Collaborating with frontend, DevOps, and infrastructure teams to support seamless deployment and integration</li>
+        <li>Contributing to architectural decisions and enforcing engineering best practices across the team</li>
+      </ul>
+      <div class="job-tech"><strong>Tech:</strong> ASP.NET Core, Angular, gRPC, RabbitMQ, Oracle, Docker, Clean Architecture, CQRS, MediatR, Camunda, DDD</div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior .NET Developer</span>
+        <span class="job-date">Feb 2025 — Jun 2025</span>
+      </div>
+      <div class="job-company">Nahdet Misr Publishing Group</div>
+      <ul>
+        <li>Transformed a legacy WordPress monolithic application into a scalable microservices architecture using Azure Functions</li>
+        <li>Developed and maintained the Aladwaa educational platform serving 1M+ users with remote learning features</li>
+        <li>Leveraged Azure Service Bus for reliable asynchronous messaging between distributed services</li>
+        <li>Integrated Azure AI Search to boost search efficiency across the platform</li>
+        <li>Optimized API endpoints to reduce response times and database load using Azure Insights monitoring</li>
+        <li>Managed complex database operations across MS-SQL and MySQL</li>
+        <li>Worked within Agile teams ensuring smooth delivery and continuous improvement</li>
+      </ul>
+      <div class="job-tech"><strong>Tech:</strong> ASP.NET Core, Azure Functions, Azure Service Bus, AI Search, Insights, Microservices, SQL Server, MySQL</div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-date">Aug 2022 — Jan 2025</span>
+      </div>
+      <div class="job-company">Digital Transformation Center</div>
+      <ul>
+        <li>Developed and maintained web applications using ASP.NET, MVC, and C#</li>
+        <li>Designed and implemented RESTful APIs using ASP.NET Web API</li>
+        <li>Integrated third-party APIs and services for enhanced functionality</li>
+        <li>Conducted code reviews and provided constructive feedback to team members</li>
+        <li>Troubleshooted and debugged software issues to ensure optimal performance</li>
+        <li>Software Architecture Standards and Best Practices</li>
+        <li>Collaborated with stakeholders to translate business requirements into technical specifications</li>
+        <li>Designed and implemented a secure, scalable API for a high-traffic web application</li>
+      </ul>
+      <div class="job-tech"><strong>Tech:</strong> ASP.NET, MVC, C#, Web API, SQL Server</div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Trainer</span>
+        <span class="job-date">May 2021 — Jun 2021</span>
+      </div>
+      <div class="job-company">Petrojet</div>
+      <ul>
+        <li>Worked with SAP modules and enterprise resource planning systems</li>
+        <li>Managed account profiles and monitored execution of demand generation activities</li>
+        <li>Collaborated with sales representatives on process optimization</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project">
+      <span class="project-name">Masar Umrah Platform</span> —
+      <span class="project-desc">Comprehensive Umrah management system (charter flights, hotel bookings, visa processing) with Clean Architecture, CQRS, and Camunda workflow orchestration.</span>
+    </div>
+    <div class="project">
+      <span class="project-name">Aladwaa Educational Platform</span> —
+      <span class="project-desc">EdTech platform serving 1M+ users, migrated from WordPress monolith to Azure-powered microservices.</span>
+    </div>
+    <div class="project">
+      <span class="project-name">National Project Management System</span> —
+      <span class="project-desc">Web-based platform for managing national projects with reporting, auth, and stakeholder training.</span>
+    </div>
+    <div class="project">
+      <span class="project-name">Content Management System</span> —
+      <span class="project-desc">.NET Core + Angular CRUD app with AutoMapper, DI, and Microsoft Identity.</span>
+      <a class="project-link" href="https://github.com/mohamad-ayman/cms-project">github.com/mohamad-ayman/cms-project</a>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <strong>Pre-Master in Software Engineering</strong><br/>
+      <span class="school">Helwan University</span>
+      <span class="meta"> · Jan 2024 — Present</span>
+    </div>
+    <div class="edu-item">
+      <strong>B.Sc. in Computer Science</strong><br/>
+      <span class="school">October 6 University</span>
+      <span class="meta"> · Sep 2018 — Jul 2021 · GPA: 2.9 (Good) · Graduation Project: Online Quiz Maker (Excellent)</span>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-list">
+      <div class="cert-item"><strong>Full Stack Web Development Diploma (.NET/Angular)</strong> — <span>Route</span></div>
+      <div class="cert-item"><strong>Agile Software Development</strong> — <span>Coursera</span></div>
+      <div class="cert-item"><strong>Software Development Processes &amp; Methodologies</strong> — <span>Coursera</span></div>
+    </div>
+  </div>
+
+</body>
+</html>
